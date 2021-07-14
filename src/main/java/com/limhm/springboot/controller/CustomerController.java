@@ -11,10 +11,20 @@ public class CustomerController {
     /*
     * Accessing Data with JPA
     * https://spring.io/guides/gs/accessing-data-jpa/
+    *
+    * Accessing data with MySQL
+    * https://spring.io/guides/gs/accessing-data-mysql/
     * */
 
     @Autowired
     private CustomerRepository repository;
+
+    @PostMapping(path="")
+    public String addNewCustomer(@RequestParam String firstName, @RequestParam String lastName) {
+        Customer customer = new Customer(firstName, lastName);
+        repository.save(customer);
+        return "Saved";
+    }
 
     @GetMapping("")
     public Iterable<Customer> getAllCustomers() {
