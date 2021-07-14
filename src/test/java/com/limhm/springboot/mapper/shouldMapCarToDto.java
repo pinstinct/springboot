@@ -7,6 +7,11 @@ import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class shouldMapCarToDto {
+    /*
+    * MapStruct in 2 Minutes
+    * https://mapstruct.org/
+    * */
+
     Car car = new Car("Tesla", 5, "SEDAN");
     CarDto carDto = CarMapper.INSTANCE.catToCarDto(car);
 
