@@ -17,6 +17,11 @@ public class CustomerController {
     private CustomerRepository repository;
 
     @GetMapping("")
+    public Iterable<Customer> getAllCustomers() {
+        return repository.findAll();
+    }
+
+    @GetMapping("/jpa")
     public String getAllCustomer() {
         repository.save(new Customer("Jack", "Bauer"));
         repository.save(new Customer("Chloe", "O'Brian"));
