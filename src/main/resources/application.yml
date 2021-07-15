@@ -13,3 +13,8 @@ spring:
       maximum-pool-size: 16
       connection-timeout: 3000
       leak-detection-threshold: 2000
+  devtools:
+    livereload:
+      enabled: true
+    restart:
+      enabled: true
