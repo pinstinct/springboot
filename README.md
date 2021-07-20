@@ -52,3 +52,4 @@ Groovy 언어 기반으로 만들어진 빌드 도구(스크립트)
             - Repository 인터페이스에 JPARepository, RepositoryCustom 확장해 구현
             - RepositoryCustom 인터페이스에 필요한 기능 정의
             - RepositoryImpl 클래스에 RepositoryCustom 기능을 queryDsl로 구현
+    - springdoc : https://springdoc.org/#getting-started

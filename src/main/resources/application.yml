@@ -19,3 +19,6 @@ spring:
       enabled: true
     restart:
       enabled: true
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
